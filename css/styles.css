@@ -3,9 +3,8 @@
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
   --studio-text-color: #000000;
-  --primary-background-color: #e5e5e5;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
-  --address-color: #ffffff;
   --hero-backgroud-color: #2f303a;
 }
 body {
@@ -28,21 +27,23 @@ body {
   padding: 0;
   margin: 0;
 }
-/* logo in header */
-/* main container */
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
+  text-align: ;
 }
 .page-header {
   display: flex;
   align-items: center;
 
   page-header: center;
+}
+
+.for-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -65,6 +66,7 @@ body {
   margin-right: 50px;
 }
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .logo {
@@ -77,11 +79,22 @@ body {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
+.for-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .blue-logo {
   color: var(--accent-text-color);
 }
 .black-logo {
   color: var(--studio-text-color);
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .nav-element {
@@ -120,11 +133,15 @@ body {
 /* hero */
 .hero {
   background-color: var(--hero-backgroud-color);
-  padding: 200px 454px;
+  padding: 200px;
   text-align: center;
 }
+
+.hero-section {
+  padding: 0 0;
+}
 .hero-title {
-  color: var(--address-color);
+  color: var(--primary-background-color);
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -137,7 +154,7 @@ body {
 /* hero button */
 .button-primary {
   background-color: var(--accent-text-color);
-  color: var(--address-color);
+  color: var(--primary-background-color);
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -179,14 +196,14 @@ body {
 }
 
 .features-set {
-  margin-top: 94;
-
   display: flex;
   justify-content: space-around;
 }
 
 .description-of-features {
-  padding-right: 30px;
+  width: 270px;
+
+  margin-right: 30px;
   text-align: left;
 }
 
@@ -207,12 +224,11 @@ body {
 .member-card {
   margin-right: 30px;
 
-  background-color: var(--address-color);
+  background-color: var(--primary-background-color);
 }
 
 .card-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 20px 24px;
 }
 .member-card:last-child {
   margin-right: 0;
@@ -224,11 +240,14 @@ body {
 .title {
   color: var(--secondary-text-color);
 }
-/* section what-are-we-doing */
+
 .what-are-we-doing {
-  margin-top: 91px;
+  padding-top: 0;
 }
 
+.title {
+  margin-bottom: 50px;
+}
 .images-set {
   display: flex;
 }
@@ -243,7 +262,9 @@ body {
 
 /* about team */
 .name-of-member {
+  margin: 0;
   color: var(--secondary-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -253,6 +274,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
   margin-bottom: 0;
 }
 .about-team {
@@ -270,20 +292,12 @@ body {
   text-align: left;
 }
 
-.how-to-find {
-  padding-bottom: 4px;
-}
-
-.how-to-find:last-child {
-  padding-bottom: 60px;
-}
-
 /* logo in footer */
 .white-logo {
-  color: var(--address-color);
+  color: var(--primary-background-color);
 }
 .address {
-  color: var(--address-color);
+  color: var(--primary-background-color);
   line-height: 1.7;
   font-style: normal;
 }
@@ -293,7 +307,7 @@ body {
 }
 /*  second page */
 .for-works {
-  padding: 94px;
+  padding: 94px 0;
 }
 
 .set-of-works {
@@ -327,6 +341,9 @@ body {
 
 .project {
   color: var(--secondary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .our-works {
@@ -354,12 +371,19 @@ body {
 
   border: 0;
   padding: 6px 22px;
+}
+
+.menu-button {
+  margin-right: 8px;
+}
+
+.menu-button:last-child {
   margin-right: 8px;
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
-  color: var(--address-color);
+  color: var(--primary-background-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
 }
@@ -372,5 +396,7 @@ body {
 .type-of-work {
   font-size: 16px;
   line-height: 1.9;
+
+  margin: 0;
 }
 /* no dots on web page */
