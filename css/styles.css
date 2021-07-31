@@ -306,11 +306,11 @@ footer {
 }
 
 .how-to-find {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .how-to-find:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 /*  second page */
 .for-works {
