@@ -34,7 +34,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: ;
 }
 .page-header {
   display: flex;
@@ -133,7 +132,7 @@ footer {
 /* hero */
 .hero {
   background-color: var(--hero-backgroud-color);
-  padding: 200px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -305,13 +304,21 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
 }
+
+.how-to-find {
+  padding-bottom: 9px;
+}
+
+.how-to-find:last-child {
+  padding-bottom: 0;
+}
 /*  second page */
 .for-works {
   padding: 94px 0;
 }
 
 .set-of-works {
-  margin-top: 34px;
+  margin-top: 50px;
 }
 
 .card-set {
